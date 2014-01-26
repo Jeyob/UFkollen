@@ -1,0 +1,383 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+div.row div#company-contact {
+
+	border: 0;
+	border-right: 1px solid #eeeeee; 
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+div.row div#company-desc {
+	margin-right: auto;
+	margin-left: 5em;
+}
+
+.uline {
+	text-decoration: underline;
+}
+
+img#UF-Logo-big {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+div.row div#content-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.list {
+
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+
+}
+
+div#quick-nav {
+	text-align: center;
+}
+
+div#company-list ul li a {
+	display: block;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	line-height: 30px;
+	border: 1px solid #CCCCCC;
+	padding-left: 10px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+div#company-list ul li {
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+
+
+/*div#company-list ul li a:hover {
+ color:#FFFFFF; 
+ background-image:url(../img/hover.png); 
+ ackground-repeat:repeat-x; 
+
+}*/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.styled-list > li > a:hover
+{
+  color: #ffffff;
+  background-color: #357ebd;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#357ebd));
+  background-image: -webkit-linear-gradient(top, #428bca, 0%, #357ebd, 100%);
+  background-image: -moz-linear-gradient(top, #428bca 0%, #357ebd 100%);
+  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
+  background-repeat: repeat-x;
+  text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
+  /*background-color: #428bca;*/
+}
+
+.presentation-block *{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ img.thumbnail {
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.presentation-block > img,
+img.thumbnail {
+	display: block;
+}
+
+.presentation-block > h3 {
+	text-transform: uppercase;
+}
+
+.presentation-block > a {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.presentation-block > h4,
+.presentation-block > h3,
+.presentation-block > h5
+ {
+	text-align: center;
+	margin-top:5px;
+	margin-bottom: 2px; 
+}
+
+div#categories-wrapper {
+
+	margin-top: 2%;
+}
+
+.info-blob {
+	border: 1 px solid	#eeeeee;
+	-webkit-border-radius: 10px;
+	background-color: #ffe1a5;
+	border-color: #ffd47c;
+	-webkit-box-shadow: inset 0 5px 0; 
+}
+
+.category > p,
+.category > p.badge {
+text-align: center;	
+}
+
+.categorybtn {
+	width: 150px;
+}
+
+ a.adm-btn {
+ 	height: 20%;
+ 	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 2em;
+	padding: 5em;
+	display: block;
+}
+
+.border-1-px {
+
+	border: 1px solid black;
+}
+
+.contact-info > div {
+
+	float: right; 
+}
+
+
+img.companyHeader {
+
+	float: left;
+}
+
+.companyWrapper > div {
+
+width: 721px; 
+margin: 0; 
+float: left; 
+display: inline; 
+padding-left:5px;
+
+
+}
+
+div#companyOverview {
+
+	width: 176px;
+	background: #fff url(../img/jobdata_bg.jpg) no-repeat top left;
+	float: left;
+	margin: 10px;
+}
+
+div#companyOverview p {
+	font-weight: bold;
+}
+
+div#companyPresentation p {
+	color: #000;
+	margin: 0;
+	min-height: 13px;
+	font-size: 13px;
+
+}
+
+div#companyOverview_content {
+
+	margin: 12px 23px 0 25px;
+	word-wrap: break-word;
+	font-size: 14px;
+}
+
+div#companyOverview_content h2 {
+	font-weight: bold;
+	font-size: 100%;
+	border-bottom: 1px dotted #666;
+	padding-bottom: 3px;
+	margin: 0;
+}
+
+div#companyOverview_content dl {
+	color: #000;
+	font-size: 80%;
+	margin-top: 10px;
+}
+
+div#companyOverview_content dd {
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	line-height: 1.25em;
+}
+
+div#companyPresentationWrapper {
+
+	width: 510px;
+	float: left;
+	margin: 18px 5px 10px 0;
+	overflow: hidden;
+}
+
+div#companyPresentation {
+	font-size: 11px;
+	line-height: normal;
+	word-wrap: break-word;
+}
+
+div#companyPresentation > img{ 
+	margin-left: 5px;
+}
+
+div.content-holder {
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	margin-top: 20px;
+	border-radius: 8px;
+}
+
+div#backDiv {
+
+	z-index: -1;
+	position: absolute;
+	height: 30%;
+	width: 100%;
+}
+
+div#company-sidecol {
+
+	width: 180px;
+	float: left;
+	margin: 20px 0 0 20px;
+	padding-bottom: 20px;
+	word-wrap: break-word;
+	border-radius: 10px;
+	border: 1px dotted black;
+}
+
+div#company-sidecol dl {
+	color: #000;
+	font-size: 80%;
+	margin-top: 10px;
+}
+
+div#company-sidecol dd {
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	line-height: 1.25em;
+}
+
+
+div#company-sidecol_content {
+	margin: 12px 23px 0 15px;
+}
+
+img#like-img {
+	vertical-align: baseline;
+}
+
+dd > span > a {
+	margin-left: 1em;
+}
+
+.rslides {
+  margin: 0 auto 40px;
+  }
+
+.img_slider {
+ /* margin-bottom: 50px;*/
+  position: relative;
+  float: left;
+  width: 100%;
+  }
+
+div#contentWrapper {
+	 margin-top: 2em;
+}
+
+div#contentWrapper input.submit-btn {
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: 20px;
+	width: 100%;
+}
+
+div#Success_notification {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background: #000000;
+   opacity: .50;
+   filter: alpha(opacity=60);
+   -moz-opacity: .50;
+   z-index: 1;
+   display: none;
+}
+
+div#Success_notification img {
+   display: none;
+   position: fixed;
+   top: 35%;
+   left: 35%;   
+   /*margin: auto auto;*/
+   /*border: 2px solid #DF314D;*/
+   padding: 0px;
+   z-index: 100;
+   font-family: Verdana;
+   font-size: 1em;
+   border-radius: 10px;
+   /*height: 30%;*/
+   /*width: 30%;*/
+}
+
+
+.emphasize {
+	background: #eeeeee; /*#f8f7f2;*/
+	border: 1px solid #d9d8cd;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#c-wrapper {
+	width: 80%;
+}
+
+div#c-wrapper .company-links {
+	text-align: center;
+}
+div#c-wrapper a {
+	padding-left: 20px;
+} 

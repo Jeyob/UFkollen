@@ -1,0 +1,24 @@
+Select CMP.name from categories C inner join companies CMP
+On C.id = CMP.categoryid
+Order by CMP.name collate nocase asc;
+
+
+
+SELECT
+  UPPER(substr(CMP.name, 1,1)) AS First_char,
+  COUNT(*) as Count
+FROM categories C inner join companies CMP
+on C.id = CMP.categoryid
+GROUP BY UPPER(substr(CMP.name, 1,1))
+ORDER BY first_char collate nocase ASC;
+
+SELECT
+  UPPER(substr(CMP.name, 1,1)) AS First_char
+FROM categories C inner join companies CMP
+on C.id = CMP.categoryid
+GROUP BY UPPER(substr(CMP.name, 1,1))
+ORDER BY first_char collate nocase ASC;
+
+
+
+select substr(name,1,1) from companies;

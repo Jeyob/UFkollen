@@ -1,0 +1,33 @@
+CREATE TABLE "Users" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "username" TEXT NOT NULL,
+    "password" TEXT NOT NULL
+);
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE "Categories" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "name" TEXT NOT NULL,
+    "imgPath" TEXT
+);
+CREATE TABLE companies (
+    "id"  INTEGER PRIMARY KEY  AUTOINCREMENT NOT NULL,
+    "name" TEXT NOT NULL,
+    "address" TEXT,
+ "logopath" TEXT,
+ "productpath" TEXT,
+ "productdesc" TEXT,
+ "categoryid" INTEGER NOT NULL,
+ foreign key (categoryid) references Categories(id));
+CREATE TABLE contacts (
+id integer primary key autoincrement not null,
+firstname TEXT,
+lastname TEXT,
+tel text,
+email text,
+companyid integer not null,
+foreign key (companyid) references companies(id));
+CREATE TABLE Companystats (
+ cpyid integer not null,
+ nlikes integer default 0,
+ nclicks integer default 0,
+ foreign key (cpyid) references companies(id));
