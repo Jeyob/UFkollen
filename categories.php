@@ -14,7 +14,7 @@
       
       $C_Telefoni         =   DB_Helper::getNumCompaniesInCategory('Telefoni');
       $C_Elektronik       =   DB_Helper::getNumCompaniesInCategory('Elektronik');
-      $C_Hobby            =   DB_Helper::getNumCompaniesInCategory('Hobby');
+      $C_Hobby            =   DB_Helper::getNumCompaniesInCategory('Hobby & Fritid');
       $C_Beauty_Skin      =   DB_Helper::getNumCompaniesInCategory('Skönhet & Hudvård');
       $C_Mode             =   DB_Helper::getNumCompaniesInCategory('Mode & Accessoarer');
       $C_Services         =   DB_Helper::getNumCompaniesInCategory('Tjänster');

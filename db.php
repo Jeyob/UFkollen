@@ -2,10 +2,11 @@
 	ini_set('display_errors', true);
 	
 	class DB extends mysqli {
-		const DB_HOST = "127.0.0.1";
-		const DB_USER = "jonas";
-		const DB_NAME = "UFkollen";
-		const DB_PASSWD = "123wrath,.-";
+		 const DB_HOST = "127.0.0.1";
+		 const DB_USER = "jonas";
+		 const DB_NAME = "UFkollen";
+		 const DB_PASSWD = "123wrath,.-";
+
 
 		public function __construct() {
 

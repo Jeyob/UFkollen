@@ -12,9 +12,13 @@
   $result = DB_Helper::getCompany( $company );
   $result = $result->fetch_array();
 
-  if( $result != NULL ) { //if not null
+  if( $result != NULL ) { //check existens of company
 
-    incrementViews( $company );
+    //check whether this browser has already liked this company
+
+
+
+    DB_STATS::incrementViews( $company );
 
   }
 
@@ -41,6 +45,8 @@
     <body>
         <?php include_once("phpincludes/loginScreen.php"); ?>
         <?php include_once("phpincludes/navigation.php"); ?>
+
+        <div id="wrap">
         <div id="backDiv" class="jumbotron" > </div>
         
         <div class="container content-holder">
@@ -87,25 +93,27 @@
                 <dl>
                     <dt>Sidvisningar</dt>
                     <dd style="margin-top:0.5em;">
-                        <span><?php echo getNviews( $result['name'] ); ?> </span>
+                        <span><?php echo DB_STATS::getNviews( $result['name'] ); ?> </span>
                     </dd>
                     <dt>Gillar</dt>
                     <dd style="margin-top:0.5em;">
-                        <img id="like-img" src="img/like.png" height="12"><span><?php echo getNlikes( $result['name'] ); ?></span><span id="like-btn"><a id="like-anchor" href="#">Gilla</a></span>
+                        <img id="like-img" src="img/like.png" height="12"><span><?php echo DB_STATS::getNlikes( $result['name'] ); ?></span><span id="like-btn"><a id="like-anchor" href="#">Gilla</a></span>
                     </dd>
                 </dl>
             </div>
         </div>
         </div>
-	 	<hr>
-
-     	<footer>
-        
-        <p>&copy; UF KOLLEN 2013</p>
-      	
-      	</footer>
+        <div id="push"></div>
+        </div> <!-- end wrap -->
+	 	
+<div id="footer">
+        <div class="container">
+          <p class="muted credit">&copy; UF KOLLEN 2013</p>
+       </div> 
+      </div>
     	
-    	</div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
@@ -113,5 +121,6 @@
 
         <script src="js/main.js"></script>
 
+    	</body> <!-- /container -->        
 
 </html>

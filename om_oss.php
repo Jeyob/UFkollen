@@ -18,42 +18,21 @@
     
      <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/slide-01.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/slide-02.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/slide-03.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-            </div>
-          </div>
+
+<div class="hero-unit">
+      <div class="container">
+        <h2>Välkommen till UF Kollen!</h2>
+
+        <div class="img_slider">
+          <ul class="rslides" id="slider4">
+            <li>
+              <img id="UF-Logo-big" src="img/Magnifying_Glass_UF.png" height="300">
+              
+            </li>
+          </ul>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
+  </div>
 
     <div class="container">
       <h2>Vilka vi är</h2>
@@ -61,40 +40,30 @@
       <br>
     <div class="row">
       <div class="presentation-block col-md-4"> 
-        <img src="img/Styrelse/Eden.JPG" width="150" height="150" class="img-rounded" >
-        <h4>Eden Eyob</h4>
-        <h5>Försäljningschef</h5>
-        <a href="mailto:" rel="Maila oss" title="Maila Namn">info@ufkollen.se</a>
+        <img src="img/Styrelse/Eden.jpg" height="200" class="img-rounded" >
+        <p style="margin: 1% 0% 1% 10%;"><strong>Eden Eyob</strong>, <span style="font-style:italic;">Försäljningschef</span> - ansvara för säljargument, försäljningsprocess, kundkontakt, statistik samt lagstiftning angående företagets arbetsområde och huvuddragen i dessa lagar.
       </div>
       
       <div class="presentation-block col-md-4"> 
-        <img src="img/Styrelse/Carl.JPG" width="150" height="150" class="img-rounded" >
-        <h4>Carl Mikael Andersson</h4>
-        <h5>Inköpschef</h5>
-        <a href="mailto:" rel="Maila oss" title="Maila Namn">info@ufkollen.se</a>
+        <img src="img/Styrelse/Carl.jpg" height="200" class="img-rounded" >
+        <p style="margin: 1% 0% 1% 10%;"><strong>Carl M. Andersson</strong>, <span style="font-style:italic;">Produktions- och inköpschef</span> - ansvarar för produktionsutveckling &amp; design, leverantörskontakter &amp; inköp samt sköter de delar i affärsplan och årsredovisning som berör varuinköp/köp av inventarier/materialkostnader.
       </div>
 
       <div class="presentation-block col-md-4"> 
-        <img src="img/Styrelse/Hamza.PNG" width="150" height="150" class="img-rounded" >
-        <h4>Hamza Sultana Beomidhagh</h4>
-        <h5>VD</h5>
-        <a href="mailto:" rel="Maila oss" title="Maila Namn">info@ufkollen.se</a>
+        <img src="img/Styrelse/Hamza.jpg" height="200" class="img-rounded" >
+        <p style="margin: 1% 0% 1% 10%;"><strong>Hamza Sultana Beomidhagh</strong>, <span style="font-style:italic;">VD</span> - ansvarar för att företagets målsättning alltid eftersträvas och alla medlemmar gör sina uppgifter, företagets verksamhetsplan, företagets möten och samlingar, kontakt med rådgivare samt att gruppens laganda alltid är på topp.</p>
       </div>
     </div>
     <div class="row">
       
       <div class="presentation-block col-md-4"> 
-        <img src="img/Styrelse/Jacob.PNG" width="150" height="150" class="img-rounded">
-        <h4>Jacob borssén</h4>
-        <h5>Ekonomichef</h5>
-        <a href="mailto:" rel="Maila oss" title="Maila Namn">info@ufkollen.se</a>
+        <img src="img/Styrelse/Jacob.jpg" height="200" class="img-rounded">
+        <p style="margin: 1% 0% 1% 10%;"><strong>Jacob Borssen</strong>, <span style="font-style:italic;">Ekonomichef</span> - ansvarar för finansiering och riskkapital, budgetering, kassa och konton, betalningar, bokföring, faktuering, ekonomisk uppfölning samt bokslut.
       </div>
       
       <div class="presentation-block col-md-4"> 
-        <img src="img/Styrelse/Matilda.JPG" width="150" height="150" class="img-rounded">
-        <h4>Matilda Sadeghi</h4>
-        <h5>Marknadsföringschef</h5>
-        <a href="mailto:" rel="Maila oss" title="Maila Namn">info@ufkollen.se</a>
+        <img src="img/Styrelse/Matilda.jpeg" height="200" class="img-rounded">
+        <p style="margin: 1% 0% 1% 10%;"><strong>Matilda Sadeghi</strong>, <span style="font-style:italic;">Marknadsföringschef</span> - ansvarar för marknadsundersökningar, marknadsföringsstrategi, formulering av produktens egenskaper samt företagets budskap.
       </div>
     </div>
     </div>

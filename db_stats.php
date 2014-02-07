@@ -1,8 +1,10 @@
 <?php
-	
+	ini_set('display_errors', true);
 	include_once('db.php');
-
-		function incrementLike( $companyName ){
+	
+	class DB_STATS {
+		
+		public static function incrementLike( $companyName ){
 			
 			$db = new DB();
 			$db->query("UPDATE Companystats 
@@ -13,7 +15,7 @@
 							   			where name = '".$companyName."')");
 		}
 
-		 function incrementViews( $companyName ){
+		public static function incrementViews( $companyName ){
 		
 			$db = new DB();
 			$db->query("UPDATE Companystats 
@@ -25,7 +27,7 @@
 
 		}
 
-		function getNlikes( $companyName ) {
+		public static function getNlikes( $companyName ) {
 
 			$db = new DB();
 			$res = $db->query("SELECT nlikes 
@@ -38,7 +40,7 @@
 
 		}
 
-		function getNviews( $companyName ){
+		public static function getNviews( $companyName ){
 
 			$db = new DB();
 			$res = $db->query("SELECT nclicks 
@@ -51,6 +53,6 @@
 			return $res['nclicks'];
 
 		}
-		
+	}
 
 ?>

@@ -7,12 +7,15 @@
 ?>
 <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">      
+            <img class navbar-brand src="img/Magnifying_Glass_UF.png" height="50" style="float:left" />
       <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+        
+          
           <a class="navbar-brand" href="#">UF KOLLEN</a>
         </div>
         <div class="navbar-collapse collapse">
@@ -26,12 +29,12 @@
        <?php echo ($thisPage == 'om_oss.php') ?           
             '<li class="active"><a href="om_oss.php">Om oss</a></li>':
             '<li><a href="om_oss.php">Om oss</a></li>'; ?>
-        <?php echo ($thisPage == '.php') ?           
+        <?php echo ($thisPage == 'kontakt.php') ?           
             '<li class="active"><a href="kontakt.php">Kontakt</a></li>':
             '<li><a href="kontakt.php">Kontakt</a></li>'; ?>
-      <?php echo ($thisPage == 'hetastDennaVecka.php') ?
-            '<li class="active"><a href="hetastDennaVecka.php">Om oss</a></li>':
-            '<li><a href="#" onClick="location.href=\'hetastDennaVecka.php\';">
+      <?php echo ($thisPage == 'topchart.php') ?
+            '<li class="active"><a href="topchart.php">Om oss</a></li>':
+            '<li><a href="#" onClick="location.href=\'topchart.php\';">
                   <img src="img/Favorite_icon.svg" height="20"></a></li>'; ?>
                 
        <?php

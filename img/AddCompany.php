@@ -1,18 +1,15 @@
 <?php 
     session_start(); 
-
-    ini_set('display_errors', true); 
     //ob_start();
     require_once 'classes/Membership.php';
     include_once("db_helpers.php");
-    include_once("php_utils/ftp_helper.php");
-    
+    ini_set('display_errors', true); 
+
     $membership = new Membership();
     if( !$membership->confirm_member() ){
         header("location: index.php");
     }
     $thisPage="AdminPage.php"; 
-
 ?>
 
 <!DOCTYPE html>
@@ -25,24 +22,19 @@
     <script type="text/javascript">
     $(document).ready(function() { 
        $("#uploadedLogo").change(function(){
-
-             var oFReader = new FileReader();
-            oFReader.readAsDataURL(document.getElementById("uploadedLogo").files[0]);
-
-            oFReader.onload = function (oFREvent) {
-            document.getElementById("c_logo").src = oFREvent.target.result;
-        };
-
+            var imgPath = 'img/';
+            var filePath = $(this).val().replace(/C:\\fakepath\\/i, '');
+            var d = new Date();
+            $("#c_logo").prop('src',imgPath+filePath+"?"+d.getTime());
+            $(this).val(imgPath+filePath);
         });
 
         $("#productImg").change(function(){
-
-            var oFReader = new FileReader();
-            oFReader.readAsDataURL(document.getElementById("productImg").files[0]);
-
-            oFReader.onload = function (oFREvent) {
-                document.getElementById("productImg_preview").src = oFREvent.target.result;
-            }
+            var imgPath = 'img/';
+            var filePath = $(this).val().replace(/C:\\fakepath\\/i, '');
+            var d = new Date();
+            $("#productImg_preview").prop('src',imgPath+filePath+"?"+d.getTime());
+            $(this).val(imgPath+filePath);
         });
 
     });
@@ -51,13 +43,6 @@
         $("#Success_notification > img").fadeIn(1000);
     }
 
-    function redirect() {
-        window.setTimeout(function() {
-            window.location.href = 'http://ufkollen.se/AddCompany.php';
-            }, 2000);
-    }
-
-
     </script>
 </head>
 <body>
@@ -65,7 +50,7 @@
   <?php include("phpincludes/navigation.php"); ?>  
  
  <div id="Success_notification">
-     <img style="z-index:1001;" src="img/Green_Checkmark.svg" width="300">
+     <img src="img/Green_Checkmark.svg" width="300">
  </div>
 
  <div id="contentWrapper" class="container">
@@ -120,15 +105,11 @@
 	}  else { //If we get here then we clicked on submit 
 		
 
-        $clogopath= realpath($_FILES['uploadedLogo']['tmp_name']);
-        
-        $plogopath = realpath($_FILES['productImg']['tmp_name']);
-        
-        FTP_HELPER::putFile($clogopath, $_FILES['uploadedLogo']['name']);
-        FTP_HELPER::putFile($plogopath, $_FILES['productImg']['name']);
-        
-        $plogopath="img/uploads/".$_FILES['productImg']['name'];
-		$clogopath="img/uploads/".$_FILES['uploadedLogo']['name'];
+		$clogopath="uploads/";
+		$clogopath= $clogopath.basename($_FILES['uploadedLogo']['name']);
+		
+		$plogopath="uploads/";
+		$plogopath= $plogopath.basename($_FILES['productImg']['name']);
 
 		$pdescp=$_POST['pDescription']; //Företags beskriving
 
@@ -140,19 +121,14 @@
 
 		try {
 			//TODO: kolla om företaget inte redan finns
-			$success = DB_Helper::addCompany( utf8_encode($cname), utf8_encode($cAddress), $cCategory , $clogopath, $pdescp, $plogopath );
+			$success = DB_Helper::addCompany( $cname, $cAddress, $cCategory , $clogopath, $pdescp, $plogopath );
             
             if( $success) {
-               //header('Refresh: 3; URL=http://localhost/Edens/AddCompany.php');
-               echo "<script type=\"text/javascript\">
+               header('Refresh: 3; URL=http://localhost/Edens/AddCompany.php');
+               echo "<script>
                         $(function(){
                             fadeInSuccessNotification();
                         });
-
-                        $(function(){
-                            redirect();
-                        });
-                    
                     </script>";
             }else {
                die("Request failed");

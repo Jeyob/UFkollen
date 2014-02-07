@@ -394,7 +394,7 @@ p {
 }
 
 .lead {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   font-size: 16.099999999999998px;
   font-weight: 200;
   line-height: 1.4;
@@ -6201,6 +6201,34 @@ body.modal-open,
   clear: both;
 }
 
+.hero-unit {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+.hero-unit li {
+  line-height: 30px;
+}
+
 .pull-right {
   float: right !important;
 }
@@ -6803,3 +6831,31 @@ td.visible-print {
     display: none !important;
   }
 }
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-md-5 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 1em;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-5 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-error {
+  color: #b94a48;
+}
+
